@@ -1,0 +1,117 @@
+*{
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    background: white;
+}
+#calculator{
+    position:relative;
+    width:210px;
+    height:312px;
+    border-radius: 3px;
+    border:2px solid darkgray;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size:18px;
+}
+#keyboard {
+    width:206px;
+    height:256px;
+    padding:2px;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    text-align:center;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-areas:
+    "clear divide multiply backspace"
+    "number7 number8 number9 minus"
+    "number4 number5 number6 plus"
+    "number1 number2 number3 equal"
+    "percent number0 dot equal"
+}
+#keyboard div[class]:not(.equal){
+    border-radius: 3px;
+    background-color: lightgray;
+    line-height:50px;
+}
+#output{
+    height:50px;
+    width:200px;
+    background-color: white;
+    font-family: "Al Bayan";
+    font-size:1em;
+    text-align:right;
+    vertical-align: 50%;
+    line-height: 50px;
+}
+.clear{
+grid-area:clear;
+  }
+.divide{
+grid-area:divide;
+}
+.multiply{
+    grid-area:multiply;
+}
+.backspace{
+    grid-area:backspace;
+}
+.number7{
+    grid-area:number7;
+}
+.number8{
+    grid-area:number8;
+}
+.number9{
+    grid-area:number9;
+}
+.number4{
+    grid-area:number4;
+}
+.number5{
+    grid-area:number5;
+}
+.number6{
+    grid-area:number6;
+}
+.number1{
+    grid-area:number1;
+}
+.number2{
+    grid-area:number2;
+}
+.number3{
+    grid-area:number3;
+}
+.number0{
+    grid-area:number0;
+}
+.minus{
+    grid-area:minus;
+}
+.plus{
+    grid-area:plus;
+}
+.percent{
+    grid-area:percent;
+}
+.dot{
+    grid-area:dot;
+}
+.equal{
+    grid-area:equal;
+    line-height:100px;
+    border-radius: 3px;
+    background-color:darkgray;
+}
+h2{
+    text-align:center;
+}
