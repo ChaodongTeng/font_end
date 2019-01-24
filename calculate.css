@@ -43,14 +43,17 @@
     line-height:50px;
 }
 #output{
+    overflow: auto;
     height:50px;
     width:200px;
     background-color: white;
     font-family: "Al Bayan";
     font-size:1em;
-    text-align:right;
+    text-align: right;
     vertical-align: 50%;
     line-height: 50px;
+    white-space:nowrap;
+
 }
 .clear{
 grid-area:clear;
